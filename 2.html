@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Pearla">
+    <meta http-equiv="refresh" content="1000">
+    <title>CSS Layout</title>
+    <style>
+       body {
+        background-color:  #efd7e6;
+        padding: 50px 70px;
+       }
+
+       .grid {
+          display: grid;
+          grid-template-columns: 1fr 400px;
+          grid-template-rows: 80px 70px 1fr 1fr 70px;
+          height: 100vh;
+          gap: 2px;
+       }
+       
+       h1 {
+          color: #af2d79;
+          text-align: center;
+          font-size: 40px;
+          font-family: 'Times New Roman', Times, serif;
+       }
+
+       #h2 {
+        color: black;
+       }
+       
+       #h1 {
+        text-align: center;
+        color: white;
+       }
+       #hi {
+        color: white;
+        font-size: 200%;
+       }
+
+       header {
+        background-color: #af2d79;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        border: 2px solid black;
+       }
+
+       nav {
+        background-color: #631944;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        border: 2px solid black;
+       }
+
+       .topnav {
+        background-color: #310a20;
+       }
+       .topnav a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 20px 30px;
+        text-decoration: none;
+    }
+    .topnav a:hover {
+       background-color: #f0c3e2;
+       color: black;
+    }
+
+
+       section {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        background-color: #efd7e6;
+        border: 2px solid black;
+        padding: 10px;
+       }
+
+       aside {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 5;
+        background-color: #e8bbd8;
+        border: 2px solid black;
+        padding: 5px;
+        font-size: 100%;
+       }
+
+       article {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        background-color: #efd7e6;
+        border: 2px solid black;
+        padding: 10px;
+       }
+
+       footer {
+        background-color: #b35e81;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        border: 2px solid black;
+
+       }
+    </style>
+</head>
+<body>
+    <h1>HTML Layout</h1>
+    <div class="grid">
+        <header>
+            <h2 id="h1">KEY TO ACHIEVE MOTIVATION</h2>
+        </header>
+        <nav>
+            <div class="topnav">
+                <p style="text-align: center;"> <a href="Pearla.html">Tip 1</a> </p>
+                  <p style="text-align: center;"> <a href="2.html">Tips 2</a></p>
+                <p style="text-align: center;"> <a href="3.html">Tips 3</a></p>
+            </div>
+        </nav>
+        <section>
+            <h2 id="h2">Overcoming Obstacles </h2>
+            <p>Obstacles are an inherent part of any pursuit, and they can be demotivating. To navigate these challenges successfully, consider the following strategies.<br>
+              <br>
+              Build Resilience: Resilience is a crucial attribute for maintaining motivation in the face of setbacks and challenges. Resilience is the ability to bounce back from adversity, to adapt and grow in the face of difficult circumstances. It's an essential skill for anyone striving to achieve their goals and sustain motivation over the long term.
+              
+              To build resilience:<br>
+              <b> Embrace a Growth Mindset:</b> A growth mindset is the belief that abilities and intelligence can be developed through dedication and hard work. This perspective allows you to see challenges as opportunities for growth and learning rather than as roadblocks to your goals.<br>
+              <br>
+              <b>Learn from Setbacks: </b>Instead of dwelling on your failures, use them as opportunities to learn. What went wrong? What can you do differently next time? This proactive approach transforms setbacks into stepping stones toward success.
+              </p>
+        </section>
+        <aside>
+            <h2 id="h2">Maintaining Consistency </h2>
+            <p> Consistency is the bedrock of long-term success. To sustain your motivation over time, 
+              consider the following strategies:Develop Habits: Establish daily or weekly habits that align 
+              with your goals. These routines act as pillars of consistency, ensuring that you stay on course, 
+              even when motivation wanes.<br>
+              <br>
+              <b> Embrace Journaling:</b>Regularly reflect on your journey and record your thoughts, emotions, 
+              and progress. Journaling is a powerful tool for maintaining motivation, as it serves as both a 
+              progress tracker and a source of inspiration. This journal can serve multiple purposes:<br>
+              <br>
+              <b>1. Progress Tracking:</b>Journaling helps you track your progress over time. You can see how far you've come, which can be motivating, especially during challenging periods.<br>
+              <b>2. Reflection:</b>Writing about your experiences and challenges can provide clarity and insight. It's a form of self-reflection that can help you better understand your motivations and actions.<br>
+              <b>3. Accountability:</b> Knowing that you'll be documenting your efforts can provide a sense of accountability, encouraging you to stay on track.<br>
+              <b>4. Source of Inspiration: </b>Your journal can become a source of inspiration. Reading about your past successes and the hurdles you've overcome can reignite your motivation during difficult times.<br>
+              </p>
+        </aside>
+        <article>
+            <h2 id="h2">Staying Inspired</h2>
+            <p>To keep the flames of motivation burning brightly, continuously seek inspiration from various sources:<br>
+             <br>
+              <b>Read and Learn: </b> Immerse yourself in books, articles, podcasts, and other sources of knowledge. These resources offer fresh
+               perspectives and innovative ideas that can reignite your motivation.Set Milestones: Within the framework of your goals, 
+               establish key milestones. Achieving these milestones acts as a constant source of motivation, providing concrete evidence 
+               of your progress.
+            </p><br>
+        </article>
+        <footer>
+            <h1 id="hi"> KEEP PUSHING FORWARD!!!</h1>
+        </footer>
+    </div>
+</body>
+</html>

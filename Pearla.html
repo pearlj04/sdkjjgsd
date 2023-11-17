@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Pearla">
+    <meta http-equiv="refresh" content="1000">
+    <title>CSS Layout</title>
+    <style>
+       body {
+        background-color:  #efd7e6;
+        padding: 50px 70px;
+       }
+
+       .grid {
+          display: grid;
+          grid-template-columns: 1fr 400px;
+          grid-template-rows: 80px 70px 1fr 1fr 70px;
+          height: 100vh;
+          gap: 2px;
+       }
+       
+       h1 {
+          color: #af2d79;
+          text-align: center;
+          font-size: 40px;
+          font-family: 'Times New Roman', Times, serif;
+       }
+
+       #h2 {
+        color: black;
+       }
+       
+       #h1 {
+        text-align: center;
+        color: white;
+       }
+       #hi {
+        color: white;
+        font-size: 200%;
+       }
+
+       header {
+        background-color: #af2d79;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        border: 2px solid black;
+       }
+
+       nav {
+        background-color: #631944;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        border: 2px solid black;
+       }
+
+       .topnav {
+        background-color: #310a20;
+       }
+       .topnav a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 20px 30px;
+        text-decoration: none;
+    }
+    .topnav a:hover {
+       background-color: #f0c3e2;
+       color: black;
+    }
+
+
+       section {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        background-color: #efd7e6;
+        border: 2px solid black;
+        padding: 10px;
+       }
+
+       aside {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 5;
+        background-color: #e8bbd8;
+        border: 2px solid black;
+        padding: 10px;
+        font-size: 125%;
+       }
+
+       article {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        background-color: #efd7e6;
+        border: 2px solid black;
+        padding: 10px;
+       }
+
+       footer {
+        background-color: #b35e81;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        border: 2px solid black;
+
+       }
+    </style>
+</head>
+<body>
+    <h1>HTML Layout</h1>
+    <div class="grid">
+        <header>
+            <h2 id="h1">THE ART OF STAYING MOTIVATED: TIPS FOR CONSISTENT INSPIRATION</h2>
+        </header>
+        <nav>
+            <div class="topnav">
+                <p style="text-align: center;"> <a href="Pearla.html">Tip 1</a> </p>
+                  <p style="text-align: center;"> <a href="2.html">Tips 2</a></p>
+                <p style="text-align: center;"> <a href="3.html">Tips 3</a></p>
+            </div>
+        </nav>
+        <section>
+            <h2 id="h2">BE CONSISTENT </h2>
+            <p>Motivation is the driving force that propels us towards our goals and aspirations, the engine behind our actions, and the spark<br> 
+               that ignites our passions. It is the relentless determination that underlies our actions, the unwavering spirit that helps us<br>
+               overcome adversity, and the persistent energy that keeps us going, even when the going gets tough. However, sustaining <br>
+               motivation can be a complex and demanding task, particularly in the face of obstacles, monotony, and the ebb and flow of life's<br>
+               challenges. In this extensive exploration, we will delve into the intricacies of motivation and offer an in-depth guide on how <br>
+               to maintain a consistent wellspring of inspiration in your life.  </p>
+        </section>
+        <aside>
+            <h2 id="h2">Understanding the Essence of Motivation </h2>
+            <p> Before we can explore strategies for maintaining motivation, it is imperative to <br>
+                grasp the multifaceted nature of motivation itself. Motivation is not a one-size-fits-all<br> 
+                concept but a complex interplay of psychological, emotional, and environmental factors. <br>
+                To gain mastery over this dynamic force, we must delve into these nuances.</p><br>
+                <br>
+                Motivation can take two primary forms, intrinsic and extrinsic. Intrinsic motivation is<br> 
+                the inner fire that is fueled by personal satisfaction, passion, and a deep sense of <br>
+                purpose. It emanates from within and is sustained by the joy of the pursuit itself. <br>
+                Extrinsic motivation, on the other hand, is influenced by external rewards like money, <br>
+                fame, or praise. While both forms of motivation have their place, intrinsic motivation <br>
+                tends to be more sustainable and fulfilling in the long run.<br>
+        </aside>
+        <article>
+            <h2 id="h2">THE POWER OF WELL-DEFINED GOALS </h2>
+            <p>One of the cornerstones of maintaining motivation is setting clear and compelling goals. Here's how to set your goals effectively.<br>
+                <br>
+               <b>  Setting SMART Goals:</b> The SMART framework provides a structured approach to goal setting, ensuring that your objectives <br>
+                are Specific, Measurable, Achievable, Relevant, and Time-bound. This clarity enables easy tracking and evaluation, which is <br>
+                essential for maintaining motivation.<br>
+                <b> Long-Term vs. Short-Term Goals: </b>To maintain consistent inspiration, distinguish between long-term aspirations and <br>
+                short-term milestones. Long-term goals provide direction and overarching purpose, while short-term goals serve as manageable steps 
+                that propel you towards your grander objectives. Long-term goals offer a sense of purpose and direction. They define the broader
+                vision and help you understand the bigger picture of your life. These could be career aspirations, personal growth objectives, 
+                or life-changing ambitions.<br>
+            </p><br>
+        </article>
+        <footer>
+            <h1 id="hi"> YOU CAN DO IT!!!</h1>
+        </footer>
+    </div>
+</body>
+</html>
